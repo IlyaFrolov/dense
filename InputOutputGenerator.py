@@ -13,6 +13,7 @@ class  InputOutputGenerator:
         self.output_dim = 500
         self.matrix_initiated = False
         self.train_density = 10
+        self.matrix_name = "matrix.txt"
         
     def generate_random_route(self):
         result = np.zeros((self.stations_number, 2))
