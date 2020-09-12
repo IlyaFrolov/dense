@@ -24,6 +24,8 @@ def init_generators(data):
     random_data_generator.set_matrix()
     
     container = FileDataContainer(data['batch_size'] * data['steps_per_epoch'])
+    container.inputs_dir = data['inputs_dir']
+    container.outputs_dir = data['outputs_dir']
     if data['files_exist']:
         container.is_initialized = True #  container.create_data_set(random_data_generator)
     else:
@@ -44,6 +46,9 @@ history = model.fit_generator(generator=train_generator,
                               epochs=data['epochs'])
         
 history_dict = history.history
+with open("result.txt", "w") as f:
+    js.dump(history_dict, f)
+'''
 loss_values = history_dict['loss']
 #val_loss_values = history_dict['val_loss']
 
@@ -57,3 +62,4 @@ plt.ylabel('Loss')
 plt.legend()
 
 plt.show()
+'''

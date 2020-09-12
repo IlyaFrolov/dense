@@ -1,1 +1,1 @@
-{"num_segments": 100, "stations_number": 20, "output_dim": 500, "train_density": 10, "batch_size": 10, "epochs": 10, "steps_per_epoch": 3, "validation_steps": 10, "validation_batch_size": 1, "inputs_dir": "\\inputs", "outputs_dir": "outputs", "neurons_num": 1000, "files_exist": 0}
+{"num_segments": 100, "stations_number": 20, "output_dim": 500, "train_density": 10, "batch_size": 10, "epochs": 10, "steps_per_epoch": 3, "validation_steps": 10, "validation_batch_size": 1, "inputs_dir": "inputs/", "outputs_dir": "outputs/", "neurons_num": 1000, "files_exist": 0}
